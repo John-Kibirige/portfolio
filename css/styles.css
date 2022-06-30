@@ -109,3 +109,14 @@ body {
   filter: blur(29px);
   border-radius: 50%;
 }
+
+/* forming the seperator using pseudo code  */
+.hero::after{
+content: '';
+height: 1px;
+background-color: #646369;
+display: block;
+margin-inline: 24px;
+margin-top: 33px;
+
+}
