@@ -251,10 +251,6 @@ body {
 
 }
 
-.project{
-
-}
-
 .project-display{
   width: 327px;
   height: 236px;
@@ -333,3 +329,80 @@ body {
   background: #2A2B33;
 }
 
+/* contact info */
+.contact{
+  padding: 24px;
+}
+
+.contact-text{
+
+}
+
+.contact-title{
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #9390FF;
+  height: 35px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.contact-description{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #F5F5FF;
+  margin-bottom: 40px;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+}
+.contact-form .user-text, .contact-form .user-text::placeholder{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #81818C;
+  background: #fff;
+  padding: 15px;
+  border: none;
+  margin-bottom: 24px;
+}
+
+.contact-form .user-email,.contact-form .user-email::placeholder{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  background: #fff;
+  padding: 15px;
+  border: none;
+  margin-bottom: 24px;
+  color: #191765;
+}
+.contact-form .user-text-area::placeholder{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #81818C;
+
+}
+.contact-form .see-projects{
+  margin-top: 52px;
+  padding: 12px;
+  width: 89px;
+  height: 48px;
+  background: #7D73FC;
+  width: 97px;
+  margin-inline: auto;
+}
