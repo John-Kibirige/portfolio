@@ -112,11 +112,73 @@ body {
 
 /* forming the seperator using pseudo code  */
 .hero::after{
-content: '';
-height: 1px;
-background-color: #646369;
-display: block;
-margin-inline: 24px;
-margin-top: 33px;
+  content: '';
+  height: 1px;
+  background-color: #646369;
+  display: block;
+  margin-inline: 24px;
+  margin-top: 33px;
 
+}
+
+/*language, frameworks and skills section styles */
+.stack-section{
+  padding: 24px;
+  position: relative;
+}
+
+.stack-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'lang frame' 'skills .';
+  margin-left: 19px;
+
+}
+
+.stack-container .language{
+  grid-area: lang;
+}
+.stack-container .frameworks{
+  grid-area: frame;
+}
+.stack-container .skills{
+  grid-area: skills;
+}
+
+.stack-container div h3{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  color: #9490FF;
+}
+
+.stack-container div ul li{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+/* the blur effect */
+.stack-blur-effect{
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  right: -32px;
+  top: 42px;
+  background: #EDECFF;
+  filter: blur(30px);
+}
+
+/* seperator after the stack section */
+.stack-section::after{
+  content: '';
+  height: 1px;
+  background-color: #646369;
+  display: block;
+  margin-top: 33px;
 }
