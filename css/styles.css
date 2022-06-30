@@ -28,7 +28,7 @@ body {
   margin-top: 44px;
 }
 
-.header .title {
+.header .logo {
   width: 81px;
   height: 16px;
   font-style: normal;
@@ -36,6 +36,8 @@ body {
   font-size: 18px;
   line-height: 16px;
   margin-left: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .menu-container {
