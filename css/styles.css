@@ -202,7 +202,6 @@ body {
   padding-inline: 24px;
 }
 .work-container .arrow-svg{
-  border: thin solid white;
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -235,3 +234,102 @@ body {
   color: #9490FF;
   text-transform: uppercase;
 }
+
+/* line seperator between header and the actual projects */
+.title::after{
+  content: '';
+  height: 1px;
+  background-color: #646369;
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+/* all the projects */
+.projects-container{
+  margin-top: 60px;
+
+}
+
+.project{
+
+}
+
+.project-display{
+  width: 327px;
+  height: 236px;
+  background-color: #F9F9F9;
+}
+
+.project-title{
+
+  width: 327px;
+  height: 105px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  margin-block: 24px;
+}
+
+.project-description{
+  width: 327px;
+  height: 204px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #DCDCE8;
+
+}
+
+.project-stack{
+  margin-block: 24px;
+
+}
+
+.project-stack ul li{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: 'Inter', sans-serif;
+  list-style-type: none;
+  display: inline-block;
+  padding: 12.5px 14px;
+  margin-inline: -2px;
+}
+
+.project-stack ul li:not(:last-of-type){
+  border-right: 1px solid #555555;
+}
+
+
+.project-btn{
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  font-family: roboto;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 10px;
+  background: #7D73FC;
+  border: none;
+  color: #EDECFF;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.project-btn:hover{
+ background: #7D73FC;
+ box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+ color: #fff;
+}
+
+.project-btn:disabled{
+  color: #C8C8D4;
+  background: #2A2B33;
+}
+
