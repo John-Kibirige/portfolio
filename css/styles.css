@@ -180,7 +180,7 @@ body {
   height: 1px;
   background-color: #646369;
   display: block;
-  margin-top: -74px;
+  margin-top: 33px;
 }
 
 /* socials designs */
@@ -189,10 +189,49 @@ body {
   margin-inline: auto;
   width: 200px;
   height: 40px; 
-  margin-top: 66px;
 }
 
 .socials a img{
   width: 38px;
   height: 34px;
+  display: block;
+}
+
+/* arrow and work */
+.work-container{
+  padding-inline: 24px;
+}
+.work-container .arrow-svg{
+  border: thin solid white;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+}
+.work-container .arrow-svg img{
+  height: 23px;
+}
+.work-container .arrow-svg h3{
+  margin-left: 12px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #A2A3AE;
+}
+
+/* Portfolio projects section */
+.portfolio-projects{
+  padding-inline: 24px;
+  margin-top: 82px;
+}
+
+.portfolio-projects .title{
+  width: 327px;
+  height: 104px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  color: #9490FF;
+  text-transform: uppercase;
 }
