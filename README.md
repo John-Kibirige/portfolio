@@ -2,7 +2,7 @@
 
 # Portfolio website
 
-This is a setup and mobile version skeleton
+This is the entire mobile version of the portfolio
 
 ## Built With
 

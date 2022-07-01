@@ -109,3 +109,388 @@ body {
   filter: blur(29px);
   border-radius: 50%;
 }
+
+/* forming the seperator using pseudo code  */
+.hero::after {
+  content: '';
+  height: 1px;
+  background-color: #646369;
+  display: block;
+  margin-inline: 24px;
+  margin-top: 33px;
+}
+
+/* language, frameworks and skills section styles */
+.stack-section {
+  padding: 24px;
+  position: relative;
+}
+
+.stack-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'lang frame' 'skills .';
+  margin-left: 19px;
+}
+
+.stack-container .language {
+  grid-area: lang;
+}
+
+.stack-container .frameworks {
+  grid-area: frame;
+}
+
+.stack-container .skills {
+  grid-area: skills;
+}
+
+.stack-container div h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  color: #9490ff;
+}
+
+/* project section, correct no-descending specificity */
+.project-stack-list li {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: 'Inter', sans-serif;
+  list-style-type: none;
+  display: inline-block;
+  padding: 12.5px 14px;
+  margin-inline: -2px;
+}
+
+.stack-container div ul li {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+/* the blur effect */
+.stack-blur-effect {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  right: -32px;
+  top: 42px;
+  background: #edecff;
+  filter: blur(30px);
+}
+
+/* seperator after the stack section */
+.stack-section::after {
+  content: '';
+  height: 1px;
+  background-color: #646369;
+  display: block;
+  margin-top: 33px;
+}
+
+/* socials designs */
+.socials {
+  display: flex;
+  margin-inline: auto;
+  width: 200px;
+  height: 40px;
+}
+
+.socials a img {
+  width: 38px;
+  height: 34px;
+  display: block;
+}
+
+/* arrow and work */
+.work-container {
+  padding-inline: 24px;
+}
+
+.work-container .arrow-svg {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.work-container .arrow-svg img {
+  height: 23px;
+}
+
+.work-container .arrow-svg h3 {
+  margin-left: 12px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #a2a3ae;
+}
+
+/* Portfolio projects section */
+.portfolio-projects {
+  padding-inline: 24px;
+  margin-top: 82px;
+}
+
+.portfolio-projects .title {
+  width: 327px;
+  height: 104px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  color: #9490ff;
+  text-transform: uppercase;
+}
+
+/* line seperator between header and the actual projects */
+.title::after {
+  content: '';
+  height: 1px;
+  background-color: #646369;
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+/* all the projects */
+.projects-container {
+  margin-top: 60px;
+}
+
+.projects-container .project {
+  position: relative;
+}
+
+.project-display {
+  width: 327px;
+  height: 236px;
+  background-color: #f9f9f9;
+}
+
+.project-title {
+  width: 327px;
+  height: 105px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-block: 24px;
+}
+
+.project-description {
+  width: 327px;
+  height: 204px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #dcdce8;
+}
+
+.project-stack {
+  margin-block: 24px;
+}
+
+.project-stack-list li:not(:last-of-type) {
+  border-right: 1px solid #555;
+}
+
+.project-btn {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 10px;
+  background: #7d73fc;
+  border: none;
+  color: #edecff;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.project-btn:hover {
+  background: #7d73fc;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  color: #fff;
+}
+
+.project-btn:disabled {
+  color: #c8c8d4;
+  background: #2a2b33;
+}
+
+/* contact info */
+.contact {
+  padding: 24px;
+}
+
+.contact-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #9390ff;
+  height: 35px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.contact-description {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .user-text,
+.contact-form .user-text::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #81818c;
+  background: #fff;
+  padding: 15px 10px;
+  border: none;
+  margin-bottom: 24px;
+}
+
+.contact-form .user-email,
+.contact-form .user-email::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  background: #fff;
+  padding: 15px 10px;
+  border: none;
+  margin-bottom: 24px;
+  color: #191765;
+}
+
+.user-text-area {
+  padding: 10px;
+  resize: vertical;
+  font-size: 16px;
+}
+
+.user-text-area:placeholder-shown {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #81818c;
+}
+
+.contact-form .see-projects {
+  margin-top: 52px;
+  padding: 12px;
+  height: 48px;
+  background: #7d73fc;
+  width: 97px;
+  margin-inline: auto;
+}
+
+/* end of section - footer seperator */
+.contact::after {
+  content: '';
+  height: 1px;
+  background-color: #3a3837;
+  display: block;
+  margin-bottom: 8px;
+  margin-inline: -24px;
+  margin-top: 30px;
+}
+
+/* footer styles */
+
+.footer p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  cursor: pointer;
+}
+
+.footer::after {
+  content: '';
+  height: 5px;
+  display: block;
+  background: #0d151e;
+  border-radius: 10px;
+  width: 134px;
+  margin: 27px auto 8px;
+}
+
+/* Adding the blur effects */
+.blur-eff-one {
+  background: #edecff;
+  width: 40px;
+  height: 483px;
+  position: absolute;
+  top: 115px;
+  left: 22px;
+  transform: rotate(-36deg);
+  border-radius: 50%;
+  filter: blur(20px);
+}
+
+.blur-eff-two {
+  background: #edecff;
+  width: 71px;
+  height: 262px;
+  position: absolute;
+  top: 151px;
+  right: -28px;
+  transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
+  border-radius: 50%;
+  filter: blur(20px);
+}
+
+.blur-eff-three {
+  position: absolute;
+  background: rgba(237, 236, 255, 0.3);
+  width: 300px;
+  height: 155px;
+  top: 257px;
+  left: -109px;
+  border-radius: 50%;
+  filter: blur(20px);
+}
+
+.blur-eff-four {
+  position: absolute;
+  width: 378px;
+  height: 102px;
+  background: #edecff;
+  top: 297px;
+  right: -261px;
+  transform: rotate(18deg);
+  border-radius: 50%;
+  filter: blur(20px);
+}
