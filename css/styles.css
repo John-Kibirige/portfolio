@@ -334,10 +334,6 @@ body {
   padding: 24px;
 }
 
-.contact-text{
-
-}
-
 .contact-title{
   font-weight: 500;
   font-size: 32px;
@@ -405,4 +401,41 @@ body {
   background: #7D73FC;
   width: 97px;
   margin-inline: auto;
+
 }
+
+/* end of section - footer seperator */
+.contact::after{  
+  content: '';
+  height: 1px;
+  background-color: #3A3837;;
+  display: block;
+  margin-bottom: 8px;
+  margin-inline: -24px;
+  margin-top: 30px;
+}
+
+/* footer styles */
+.footer{
+}
+.footer p{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #EBEBFF;
+  cursor: pointer;
+}
+
+.footer::after{
+  content: '';
+  height: 5px;
+  display: block;
+  margin-bottom: 8px;
+  background: #0D151E;
+  border-radius: 10px;
+  width: 134px;
+  margin-inline: auto;
+  margin: 27px auto 8px;
+}
+
