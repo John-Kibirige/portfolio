@@ -111,187 +111,51 @@ body {
 }
 
 /* forming the seperator using pseudo code  */
-.hero::after{
+.hero::after {
   content: '';
   height: 1px;
   background-color: #646369;
   display: block;
   margin-inline: 24px;
   margin-top: 33px;
-
 }
 
-/*language, frameworks and skills section styles */
-.stack-section{
+/* language, frameworks and skills section styles */
+.stack-section {
   padding: 24px;
   position: relative;
 }
 
-.stack-container{
+.stack-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 'lang frame' 'skills .';
   margin-left: 19px;
-
 }
 
-.stack-container .language{
+.stack-container .language {
   grid-area: lang;
 }
-.stack-container .frameworks{
+
+.stack-container .frameworks {
   grid-area: frame;
 }
-.stack-container .skills{
+
+.stack-container .skills {
   grid-area: skills;
 }
 
-.stack-container div h3{
+.stack-container div h3 {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.7px;
-  color: #9490FF;
+  color: #9490ff;
 }
 
-.stack-container div ul li{
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  list-style-type: none;
-  margin-top: 20px;
-}
-
-/* the blur effect */
-.stack-blur-effect{
-  position: absolute;
-  width: 68px;
-  height: 68px;
-  border-radius: 50%;
-  right: -32px;
-  top: 42px;
-  background: #EDECFF;
-  filter: blur(30px);
-}
-
-/* seperator after the stack section */
-.stack-section::after{
-  content: '';
-  height: 1px;
-  background-color: #646369;
-  display: block;
-  margin-top: 33px;
-}
-
-/* socials designs */
-.socials{
-  display: flex;
-  margin-inline: auto;
-  width: 200px;
-  height: 40px; 
-}
-
-.socials a img{
-  width: 38px;
-  height: 34px;
-  display: block;
-}
-
-/* arrow and work */
-.work-container{
-  padding-inline: 24px;
-}
-.work-container .arrow-svg{
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  align-items: center;
-}
-.work-container .arrow-svg img{
-  height: 23px;
-}
-.work-container .arrow-svg h3{
-  margin-left: 12px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 32px;
-  color: #A2A3AE;
-}
-
-/* Portfolio projects section */
-.portfolio-projects{
-  padding-inline: 24px;
-  margin-top: 82px;
-}
-
-.portfolio-projects .title{
-  width: 327px;
-  height: 104px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 52px;
-  color: #9490FF;
-  text-transform: uppercase;
-}
-
-/* line seperator between header and the actual projects */
-.title::after{
-  content: '';
-  height: 1px;
-  background-color: #646369;
-  display: block;
-  margin-top: 24px;
-  margin-bottom: 8px;
-}
-
-/* all the projects */
-.projects-container{
-  margin-top: 60px;
-
-}
-
-.projects-container .project{
-  position: relative;
-}
-
-.project-display{
-  width: 327px;
-  height: 236px;
-  background-color: #F9F9F9;
-}
-
-.project-title{
-
-  width: 327px;
-  height: 105px;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 44px;
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  margin-block: 24px;
-}
-
-.project-description{
-  width: 327px;
-  height: 204px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  color: #DCDCE8;
-
-}
-
-.project-stack{
-  margin-block: 24px;
-
-}
-
-.project-stack ul li{
+/* project section, correct no-descending specificity */
+.project-stack-list li {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -302,82 +166,219 @@ body {
   margin-inline: -2px;
 }
 
-.project-stack ul li:not(:last-of-type){
-  border-right: 1px solid #555555;
+.stack-container div ul li {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  list-style-type: none;
+  margin-top: 20px;
 }
 
+/* the blur effect */
+.stack-blur-effect {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  right: -32px;
+  top: 42px;
+  background: #edecff;
+  filter: blur(30px);
+}
 
-.project-btn{
+/* seperator after the stack section */
+.stack-section::after {
+  content: '';
+  height: 1px;
+  background-color: #646369;
+  display: block;
+  margin-top: 33px;
+}
+
+/* socials designs */
+.socials {
+  display: flex;
+  margin-inline: auto;
+  width: 200px;
+  height: 40px;
+}
+
+.socials a img {
+  width: 38px;
+  height: 34px;
+  display: block;
+}
+
+/* arrow and work */
+.work-container {
+  padding-inline: 24px;
+}
+
+.work-container .arrow-svg {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.work-container .arrow-svg img {
+  height: 23px;
+}
+
+.work-container .arrow-svg h3 {
+  margin-left: 12px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #a2a3ae;
+}
+
+/* Portfolio projects section */
+.portfolio-projects {
+  padding-inline: 24px;
+  margin-top: 82px;
+}
+
+.portfolio-projects .title {
+  width: 327px;
+  height: 104px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  color: #9490ff;
+  text-transform: uppercase;
+}
+
+/* line seperator between header and the actual projects */
+.title::after {
+  content: '';
+  height: 1px;
+  background-color: #646369;
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+/* all the projects */
+.projects-container {
+  margin-top: 60px;
+}
+
+.projects-container .project {
+  position: relative;
+}
+
+.project-display {
+  width: 327px;
+  height: 236px;
+  background-color: #f9f9f9;
+}
+
+.project-title {
+  width: 327px;
+  height: 105px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-block: 24px;
+}
+
+.project-description {
+  width: 327px;
+  height: 204px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #dcdce8;
+}
+
+.project-stack {
+  margin-block: 24px;
+}
+
+.project-stack-list li:not(:last-of-type) {
+  border-right: 1px solid #555;
+}
+
+.project-btn {
   font-weight: 500;
   font-size: 12px;
   line-height: 24px;
-  font-family: roboto;
   text-align: center;
   letter-spacing: 0.03em;
   padding: 10px;
-  background: #7D73FC;
+  background: #7d73fc;
   border: none;
-  color: #EDECFF;
+  color: #edecff;
   cursor: pointer;
   margin-bottom: 40px;
 }
 
-.project-btn:hover{
- background: #7D73FC;
- box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
- color: #fff;
+.project-btn:hover {
+  background: #7d73fc;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  color: #fff;
 }
 
-.project-btn:disabled{
-  color: #C8C8D4;
-  background: #2A2B33;
+.project-btn:disabled {
+  color: #c8c8d4;
+  background: #2a2b33;
 }
 
 /* contact info */
-.contact{
+.contact {
   padding: 24px;
 }
 
-.contact-title{
+.contact-title {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #9390FF;
+  color: #9390ff;
   height: 35px;
   text-transform: uppercase;
   margin-bottom: 24px;
 }
 
-.contact-description{
+.contact-description {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #F5F5FF;
+  color: #f5f5ff;
   margin-bottom: 40px;
 }
 
-.contact-form{
+.contact-form {
   display: flex;
   flex-direction: column;
 }
-.contact-form .user-text, .contact-form .user-text::placeholder{
+
+.contact-form .user-text,
+.contact-form .user-text::placeholder {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #81818C;
+  color: #81818c;
   background: #fff;
   padding: 15px;
   border: none;
   margin-bottom: 24px;
 }
 
-.contact-form .user-email,.contact-form .user-email::placeholder{
+.contact-form .user-email,
+.contact-form .user-email::placeholder {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -389,30 +390,29 @@ body {
   margin-bottom: 24px;
   color: #191765;
 }
-.contact-form .user-text-area::placeholder{
+
+.contact-form .user-text-area::placeholder {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #81818C;
-
+  color: #81818c;
 }
-.contact-form .see-projects{
+
+.contact-form .see-projects {
   margin-top: 52px;
   padding: 12px;
-  width: 89px;
   height: 48px;
-  background: #7D73FC;
+  background: #7d73fc;
   width: 97px;
   margin-inline: auto;
-
 }
 
 /* end of section - footer seperator */
-.contact::after{  
+.contact::after {
   content: '';
   height: 1px;
-  background-color: #3A3837;;
+  background-color: #3a3837;
   display: block;
   margin-bottom: 8px;
   margin-inline: -24px;
@@ -421,30 +421,28 @@ body {
 
 /* footer styles */
 
-.footer p{
+.footer p {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #EBEBFF;
+  color: #ebebff;
   cursor: pointer;
 }
 
-.footer::after{
+.footer::after {
   content: '';
   height: 5px;
   display: block;
-  margin-bottom: 8px;
-  background: #0D151E;
+  background: #0d151e;
   border-radius: 10px;
   width: 134px;
-  margin-inline: auto;
   margin: 27px auto 8px;
 }
 
 /* Adding the blur effects */
-.blur-eff-one{
-  background: #EDECFF;
+.blur-eff-one {
+  background: #edecff;
   width: 40px;
   height: 483px;
   position: absolute;
@@ -455,8 +453,8 @@ body {
   filter: blur(20px);
 }
 
-.blur-eff-two{
-  background: #EDECFF;
+.blur-eff-two {
+  background: #edecff;
   width: 71px;
   height: 262px;
   position: absolute;
@@ -467,7 +465,7 @@ body {
   filter: blur(20px);
 }
 
-.blur-eff-three{
+.blur-eff-three {
   position: absolute;
   background: rgba(237, 236, 255, 0.3);
   width: 300px;
@@ -478,11 +476,11 @@ body {
   filter: blur(20px);
 }
 
-.blur-eff-four{
+.blur-eff-four {
   position: absolute;
   width: 378px;
   height: 102px;
-  background: #EDECFF;
+  background: #edecff;
   top: 297px;
   right: -261px;
   transform: rotate(18deg);
