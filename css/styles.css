@@ -372,7 +372,7 @@ body {
   line-height: 24px;
   color: #81818c;
   background: #fff;
-  padding: 15px;
+  padding: 15px 10px;
   border: none;
   margin-bottom: 24px;
 }
@@ -385,13 +385,20 @@ body {
   font-size: 15px;
   line-height: 24px;
   background: #fff;
-  padding: 15px;
+  padding: 15px 10px;
   border: none;
   margin-bottom: 24px;
   color: #191765;
 }
 
-.contact-form .user-text-area::placeholder {
+.user-text-area {
+  padding: 10px;
+  resize: vertical;
+  font-size: 16px;
+}
+
+.user-text-area:placeholder-shown {
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
