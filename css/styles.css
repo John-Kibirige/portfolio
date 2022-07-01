@@ -251,6 +251,10 @@ body {
 
 }
 
+.projects-container .project{
+  position: relative;
+}
+
 .project-display{
   width: 327px;
   height: 236px;
@@ -416,8 +420,7 @@ body {
 }
 
 /* footer styles */
-.footer{
-}
+
 .footer p{
   font-weight: 400;
   font-size: 20px;
@@ -439,3 +442,50 @@ body {
   margin: 27px auto 8px;
 }
 
+/* Adding the blur effects */
+.blur-eff-one{
+  background: #EDECFF;
+  width: 40px;
+  height: 483px;
+  position: absolute;
+  top: 115px;
+  left: 22px;
+  transform: rotate(-36deg);
+  border-radius: 50%;
+  filter: blur(20px);
+}
+
+.blur-eff-two{
+  background: #EDECFF;
+  width: 71px;
+  height: 262px;
+  position: absolute;
+  top: 151px;
+  right: -28px;
+  transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
+  border-radius: 50%;
+  filter: blur(20px);
+}
+
+.blur-eff-three{
+  position: absolute;
+  background: rgba(237, 236, 255, 0.3);
+  width: 300px;
+  height: 155px;
+  top: 257px;
+  left: -109px;
+  border-radius: 50%;
+  filter: blur(20px);
+}
+
+.blur-eff-four{
+  position: absolute;
+  width: 378px;
+  height: 102px;
+  background: #EDECFF;
+  top: 297px;
+  right: -261px;
+  transform: rotate(18deg);
+  border-radius: 50%;
+  filter: blur(20px);
+}
