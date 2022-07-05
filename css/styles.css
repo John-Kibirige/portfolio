@@ -442,7 +442,6 @@ body {
   box-shadow: none;
 }
 
-
 /* end of section - footer seperator */
 .contact::after {
   content: '';
