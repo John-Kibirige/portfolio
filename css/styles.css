@@ -369,7 +369,8 @@ body {
   flex-direction: column;
 }
 
-.contact-form ul li input, .contact-form ul li textarea {
+.contact-form ul li input,
+.contact-form ul li textarea {
   width: 327px;
 }
 
