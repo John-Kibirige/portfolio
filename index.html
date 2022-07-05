@@ -228,14 +228,31 @@
                </p>
             </div>
 
-            <div class="contact-form">
-               <input type="text" placeholder="Text Input" class="user-text">
-               <input type="text" name="email" id="email" placeholder="kibirigejohn005@gmail.com" class="user-email">
-               <textarea name="text-area" id="user-text" cols="30" rows="10" class="user-text-area" placeholder="Enter text here"></textarea>
-               <button class="see-projects project-btn">
-                  See Project
-               </button>
-            </div>
+            <form class="contact-form" action="https://formspree.io/f/xnqwkjoy" method="post">
+               <ul>
+                  <li>
+                     <label for="user-name"></label>
+                     <input type="text" placeholder="Text Input" class="user-name" id="user-name">
+                  </li>
+                  <li>
+                     <label for="email"></label>
+                     <input type="text" name="email" id="email" placeholder="kibirigejohn005@gmail.com" class="user-email">
+
+                  </li>
+                  <li>
+                     <label for="user-text"></label>
+                     <textarea name="text-area" id="user-text" cols="30" rows="10" class="user-text-area" placeholder="Enter text here"></textarea>
+
+                  </li>
+                  <li>
+                     <button class="see-projects project-btn">
+                        See Project
+                     </button>
+
+                  </li>
+               </ul>
+             
+            </form>
          </section>
 
          <!-- footer -->

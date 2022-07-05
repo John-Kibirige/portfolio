@@ -363,8 +363,17 @@ body {
   flex-direction: column;
 }
 
-.contact-form .user-text,
-.contact-form .user-text::placeholder {
+.contact-form ul li{
+  list-style-type: none;
+}
+
+.contact-form ul li input, 
+.contact-form ul li textarea{
+  width: 327px;
+}
+
+.contact-form .user-name,
+.contact-form .user-name::placeholder {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
