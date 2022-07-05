@@ -155,12 +155,6 @@ body {
 }
 
 /* correct no-descending specificity */
-.contact-form ul li{
-  list-style-type: none;
-}
-
-/* project section*/
-
 .project-stack-list li {
   font-weight: 500;
   font-size: 15px;
@@ -171,6 +165,12 @@ body {
   padding: 12.5px 14px;
   margin-inline: -2px;
 }
+
+.contact-form ul li {
+  list-style-type: none;
+}
+
+/* project section */
 
 .stack-container div ul li {
   font-weight: 400;
@@ -369,8 +369,7 @@ body {
   flex-direction: column;
 }
 
-.contact-form ul li input, 
-.contact-form ul li textarea {
+.contact-form ul li input, .contact-form ul li textarea {
   width: 327px;
 }
 
