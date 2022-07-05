@@ -12,12 +12,13 @@ html {
   margin: 0;
 }
 
-html, body {
-    width: 100%;
-    height: auto;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+html,
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -437,7 +438,7 @@ body {
 }
 
 .contact-form .see-projects:active {
-  background: #5E42D7;
+  background: #5e42d7;
   box-shadow: none;
 }
 
@@ -521,5 +522,3 @@ body {
   border-radius: 50%;
   filter: blur(20px);
 }
-
-
