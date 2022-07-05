@@ -12,6 +12,14 @@ html {
   margin: 0;
 }
 
+html, body {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body {
   width: 375px;
   background: #191765;
@@ -428,6 +436,12 @@ body {
   margin-inline: auto;
 }
 
+.contact-form .see-projects:active {
+  background: #5E42D7;
+  box-shadow: none;
+}
+
+
 /* end of section - footer seperator */
 .contact::after {
   content: '';
@@ -507,3 +521,5 @@ body {
   border-radius: 50%;
   filter: blur(20px);
 }
+
+
