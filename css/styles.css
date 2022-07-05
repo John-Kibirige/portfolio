@@ -404,6 +404,8 @@ body {
   padding: 10px;
   resize: vertical;
   font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.4px;
 }
 
 .user-text-area:placeholder-shown {

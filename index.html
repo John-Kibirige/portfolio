@@ -232,20 +232,20 @@
                <ul>
                   <li>
                      <label for="user-name"></label>
-                     <input type="text" placeholder="Text Input" class="user-name" id="user-name">
+                     <input type="text" placeholder="Text Input" class="user-name" id="user-name" name="user-name"maxlength="30" required >
                   </li>
                   <li>
                      <label for="email"></label>
-                     <input type="text" name="email" id="email" placeholder="kibirigejohn005@gmail.com" class="user-email">
+                     <input type="email" name="email" id="email" placeholder="kibirigejohn005@gmail.com" class="user-email" required >
 
                   </li>
                   <li>
                      <label for="user-text"></label>
-                     <textarea name="text-area" id="user-text" cols="30" rows="10" class="user-text-area" placeholder="Enter text here"></textarea>
+                     <textarea name="text-area" id="user-text" cols="30" rows="10" class="user-text-area" placeholder="Enter text here" maxlength="500" required></textarea>
 
                   </li>
                   <li>
-                     <button class="see-projects project-btn">
+                     <button class="see-projects project-btn" value="send">
                         See Project
                      </button>
 
