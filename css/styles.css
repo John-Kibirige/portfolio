@@ -22,7 +22,7 @@ body {
 }
 
 body {
-  width: 375px;
+  min-width: 375px;
   background: #191765;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -71,7 +71,6 @@ body {
 }
 
 .hero h1 {
-  width: 327px;
   height: 55px;
   font-style: normal;
   font-weight: 700;
@@ -97,7 +96,6 @@ body {
 }
 
 .hero p {
-  width: 327px;
   height: 170px;
   font-style: normal;
   font-weight: 400;
@@ -106,6 +104,7 @@ body {
   text-align: center;
   color: #c8c8d4;
   margin-inline: auto;
+  padding: 0 24px;
 }
 
 .blur-effect {
@@ -255,7 +254,6 @@ body {
 }
 
 .portfolio-projects .title {
-  width: 327px;
   height: 104px;
   font-style: normal;
   font-weight: 500;
@@ -285,13 +283,11 @@ body {
 }
 
 .project-display {
-  width: 327px;
   height: 236px;
   background-color: #f9f9f9;
 }
 
 .project-title {
-  width: 327px;
   height: 105px;
   font-weight: 500;
   font-size: 32px;
@@ -303,7 +299,6 @@ body {
 }
 
 .project-description {
-  width: 327px;
   height: 204px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -317,8 +312,14 @@ body {
   margin-block: 24px;
 }
 
+.project-stack .project-stack-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .project-stack-list li:not(:last-of-type) {
   border-right: 1px solid #555;
+  margin-right: 18%;
 }
 
 .project-btn {
@@ -380,7 +381,7 @@ body {
 
 .contact-form ul li input,
 .contact-form ul li textarea {
-  width: 327px;
+  width: calc(100vw - 65px);
 }
 
 .contact-form .user-name,
