@@ -123,7 +123,7 @@
                      </ul>
                   </div>
 
-                  <button class="project-btn">
+                  <button class="project-btn" type="button">
                      See Project
                   </button>
 
@@ -149,7 +149,7 @@
                      </ul>
                   </div>
 
-                  <button class="project-btn">
+                  <button class="project-btn" type="button">
                      See Project
                   </button>
 
@@ -176,7 +176,7 @@
                      </ul>
                   </div>
 
-                  <button class="project-btn">
+                  <button class="project-btn" type="button">
                      See Project
                   </button>
                   
@@ -203,7 +203,7 @@
                      </ul>
                   </div>
 
-                  <button class="project-btn">
+                  <button class="project-btn" type="button">
                      See Project
                   </button>
 
@@ -228,14 +228,31 @@
                </p>
             </div>
 
-            <div class="contact-form">
-               <input type="text" placeholder="Text Input" class="user-text">
-               <input type="text" name="email" id="email" placeholder="kibirigejohn005@gmail.com" class="user-email">
-               <textarea name="text-area" id="user-text" cols="30" rows="10" class="user-text-area" placeholder="Enter text here"></textarea>
-               <button class="see-projects project-btn">
-                  See Project
-               </button>
-            </div>
+            <form class="contact-form" action="https://formspree.io/f/xnqwkjoy" method="post">
+               <ul>
+                  <li>
+                     <label for="user-name"></label>
+                     <input type="text" placeholder="Enter your name" class="user-name" id="user-name" name="user-name" maxlength="30" required >
+                  </li>
+                  <li>
+                     <label for="email"></label>
+                     <input type="email" name="email" id="email" placeholder="Email" class="user-email" required >
+
+                  </li>
+                  <li>
+                     <label for="user-text"></label>
+                     <textarea name="text-area" id="user-text" cols="30" rows="10" class="user-text-area" placeholder="Enter text here" maxlength="500" required></textarea>
+
+                  </li>
+                  <li>
+                     <button class="see-projects project-btn" type="submit" value="send">
+                        See Project
+                     </button>
+
+                  </li>
+               </ul>
+             
+            </form>
          </section>
 
          <!-- footer -->
