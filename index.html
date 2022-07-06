@@ -20,6 +20,12 @@
       <!-- header section  -->
       <header class="header">
          <a href="#" class="logo">John Doe</a>
+         <nav class="header-links">
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">contact</a>
+            <a href="#"><img src="./images/email-icon.svg" width="22px" height="18px" alt="email"></a>
+         </nav>
          <nav class="menu-container">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -28,7 +34,7 @@
       </header>
 
       <!-- hero section  -->
-      <section class="hero">
+      <section class="hero" id="about">
          <h1>Kibirige John</h1>
          <h2>Software Developer</h2>
          <p>
@@ -78,8 +84,19 @@
          <div class="stack-blur-effect"></div>
       </section>
 
+      <br class="stack-seperator">
+
       <!-- socials and work section -->
+
       <section class="social-work-section">
+         <!-- work container before the socials section -->
+         <div class="work-container first-work-container">
+            <div class="arrow-svg">
+               <img src="/images/arrow-key.svg" alt="arrow symbol">
+               <h3>Work</h3>
+            </div>
+         </div>
+
          <!-- socials -->
          <nav class="socials">
             <a href="#"><img src="./images/github.jpg" alt="github"></a>
@@ -99,7 +116,7 @@
       </section>
 
          <!-- portfolio projects section  -->
-         <section class="portfolio-projects">
+         <section class="portfolio-projects" id="portfolio">
             <h1 class="title">
                my recent work
             </h1>
@@ -218,7 +235,7 @@
          <!-- end of projects section  -->
 
          <!-- contact section -->
-         <section class="contact">
+         <section class="contact" id="contact">
             <div class="contact-text">
                <h1 class="contact-title">
                   contact us

@@ -28,6 +28,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@media (min-width: 768px) {
+  body {
+      padding: 10px 155px;
+  }
+}
+
 /* Header styles  */
 .header {
   height: 48px;
@@ -63,6 +69,40 @@ body {
 
 .bar:first-of-type {
   margin-top: 0;
+}
+
+.header-links {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header-links {
+    display: flex;
+  }
+
+  .header-links a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .header-links a:hover {
+    color: #7d73fc
+  }
+
+  .header-links a:not(:last-of-type) {
+    margin-right: 32px;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .header .logo {
+    margin-left: 0;
+  }
 }
 
 /* hero section styles  */
@@ -118,6 +158,40 @@ body {
   border-radius: 50%;
 }
 
+@media (min-width: 768px){
+  .hero{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      
+  }
+  .hero h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .hero h2{
+    font-size: 32px;
+    line-height: 46px;
+  }
+
+  .hero p {
+    line-height: 32px;
+    color: #b3bac5;
+    width: 445px;
+    margin-inline: 0;
+    padding: 0;
+  }
+
+  .hero .blur-effect{
+    left: -92px;
+    top: 30px;
+    filter: blur(20px);
+
+  }
+}
+
 /* forming the seperator using pseudo code  */
 .hero::after {
   content: '';
@@ -128,10 +202,30 @@ body {
   margin-top: 33px;
 }
 
+@media (min-width: 768px){
+  .hero p::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #646369;
+    margin-top: 50px;   
+  }
+}
+
 /* language, frameworks and skills section styles */
 .stack-section {
   padding: 24px;
   position: relative;
+}
+
+@media(min-width: 768px) {
+  .stack-section {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 10px;
+  }
 }
 
 .stack-container {
@@ -139,6 +233,24 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 'lang frame' 'skills .';
   margin-left: 19px;
+}
+
+@media (min-width: 768px){
+  .stack-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'lang frame skills';
+    width: 445px;
+    margin-left: -12px;
+    gap: 60px;
+  }
+  .stack-container::after{
+    content: '';
+    display: block;
+    width: 430%;
+    height: 1px;
+    margin-top: -20px;
+    background-color: #646369;
+  }
 }
 
 .stack-container .language {
@@ -160,6 +272,16 @@ body {
   line-height: 24px;
   letter-spacing: 0.7px;
   color: #9490ff;
+}
+
+@media (min-width: 768px){
+  .stack-container div h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 29px;
+    color: #9390FF;
+  }
+
 }
 
 /* correct no-descending specificity */
@@ -186,6 +308,13 @@ body {
   line-height: 24px;
   list-style-type: none;
   margin-top: 20px;
+}
+
+@media (min-width: 769px) {
+  .stack-container div ul li {
+    font-size: 14px;
+    line-height: 25px;
+  }
 }
 
 /* the blur effect */
@@ -228,6 +357,10 @@ body {
   padding-inline: 24px;
 }
 
+.first-work-container {
+  display: none;
+}
+
 .work-container .arrow-svg {
   display: flex;
   justify-content: center;
@@ -245,6 +378,22 @@ body {
   font-size: 20px;
   line-height: 32px;
   color: #a2a3ae;
+}
+
+@media (min-width: 768px){
+  .first-work-container {
+    display: block;
+  }
+
+  .social-work-section{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .work-container .arrow-svg {
+    margin-top: 0;
+  }
 }
 
 /* Portfolio projects section */
