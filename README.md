@@ -2,17 +2,13 @@
 
 # Portfolio website
 
-This is the entire mobile version of the portfolio
+This is the entire version of the portfolio for both mobile and desktop
 
 ## Built With
 
 -  Major languages : HTML & CSS
 -  Frameworks
 -  Technologies used : Linters
-
-## Live Demo (if available)
-
-[Live Demo Link]()
 
 ## Getting Started
 
