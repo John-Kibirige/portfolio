@@ -30,7 +30,7 @@ body {
 
 @media (min-width: 768px) {
   body {
-      padding: 10px 155px;
+      padding: 10px 132px;
   }
 }
 
@@ -310,10 +310,11 @@ body {
   margin-top: 20px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .stack-container div ul li {
     font-size: 14px;
     line-height: 25px;
+    margin-top: 2%;
   }
 }
 
@@ -329,7 +330,17 @@ body {
   filter: blur(30px);
 }
 
-/* seperator after the stack section */
+@media (min-width: 768px){
+  .stack-blur-effect{
+    width: 190px;
+    height: 190px;
+    right: -149px;
+    top: -142px;
+    filter: blur(20px);
+  }
+}
+
+/* separator after the stack section */
 .stack-section::after {
   content: '';
   height: 1px;
@@ -412,6 +423,20 @@ body {
   text-transform: uppercase;
 }
 
+@media (min-width: 786px) {
+
+  .portfolio-projects .title {
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 70px;
+  }
+  .portfolio-projects .title::first-letter {
+    text-transform: uppercase;
+  }
+
+}
+
 /* line seperator between header and the actual projects */
 .title::after {
   content: '';
@@ -436,8 +461,37 @@ body {
   background-color: #f9f9f9;
 }
 
+@media (min-width: 768px){
+  .projects-container .project {
+    display: flex;
+    gap: 24px;
+    height: 448px;
+    margin-bottom: 80px;
+  }
+
+  .project-display{
+    flex: 5 1 20px;
+    height: 100%;
+  }
+
+  .project-text{
+    flex: 2 3 211px;
+  }
+  .pt-special {
+    margin-top: -12px;
+  }
+
+  .order-start{
+    order: 1;
+  }
+
+  .order-end{
+    order: 2;
+  }
+}
 .project-title {
-  height: 105px;
+  min-height: 50px;
+  max-height: 80px;
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
@@ -457,6 +511,18 @@ body {
   color: #dcdce8;
 }
 
+@media (min-width: 768px){
+  .project-description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8vw;
+    line-height: 28px;
+    color: #dfe1e6;
+    height: none;
+    height: 182px;
+  }
+
+}
+
 .project-stack {
   margin-block: 24px;
 }
@@ -471,6 +537,14 @@ body {
   margin-right: 18%;
 }
 
+@media (min-width: 768px){
+
+  .project-stack-list li:not(:last-of-type) {
+    border-right: 1px solid #555;
+    margin-right: 26%;
+  }
+}
+
 .project-btn {
   font-weight: 500;
   font-size: 12px;
@@ -483,6 +557,15 @@ body {
   color: #edecff;
   cursor: pointer;
   margin-bottom: 40px;
+}
+
+@media (min-width: 768px){
+  .project-btn {
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Roboto' sans-serif;
+    padding: 12px;
+  }
 }
 
 .project-btn:hover {
