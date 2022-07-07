@@ -2,7 +2,7 @@
 
 # Portfolio website
 
-This is the entire mobile version of the portfolio
+This is the entire version of the portfolio for both mobile and desktop
 
 ## Built With
 
