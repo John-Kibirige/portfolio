@@ -44,7 +44,7 @@ body {
 }
 
 .header .logo {
-  width: 81px;
+  width: 107px;
   height: 16px;
   font-style: normal;
   font-weight: 500;
@@ -769,6 +769,10 @@ body {
   margin: 27px auto 8px;
 }
 
+.footer-separator {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .footer {
     display: flex;
@@ -777,6 +781,15 @@ body {
 
   .footer::after {
     display: none;
+  }
+
+  .footer-separator {
+    display: block;
+    width: calc(100% + 284px);
+    height: 1px;
+    margin-left: -142px;
+    background: #3a3837;
+    margin-bottom: 22px;
   }
 }
 

@@ -10,10 +10,6 @@ This is the entire version of the portfolio for both mobile and desktop
 -  Frameworks
 -  Technologies used : Linters
 
-## Live Demo (if available)
-
-[Live Demo Link]()
-
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
