@@ -356,11 +356,14 @@ body {
   margin-inline: auto;
   width: 200px;
   height: 40px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
   .socials {
     margin-inline: 0;
+    margin-right: 24px;
   }
 }
 
@@ -904,3 +907,21 @@ body {
     animation-iteration-count: 1;
     animation-direction: normal;
 }
+
+svg {
+  transition: all 0.2s ease-in-out;
+}
+
+.work-svg {
+  fill: white;
+}
+
+.svg-icon {
+  fill: #fff;
+}
+
+svg:hover {
+  fill: #7d73fc;
+}
+
+
