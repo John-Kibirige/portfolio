@@ -567,6 +567,7 @@ body {
   color: #edecff;
   cursor: pointer;
   margin-bottom: 40px;
+  transition: all 0.2s ease-in-out;
 }
 
 @media (min-width: 768px) {
