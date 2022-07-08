@@ -898,14 +898,14 @@ body {
   }
 }
 
-.header .logo {
-    animation-name: logo-frame;
-    animation-duration: 0.4s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-direction: normal;
+.animate-logo {
+  animation-name: logo-frame;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: normal;
 }
 
 svg {
@@ -923,5 +923,3 @@ svg {
 svg:hover {
   fill: #7d73fc;
 }
-
-
