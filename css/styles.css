@@ -86,10 +86,12 @@ body {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
+    transition: all 0.2s ease-in-out;
   }
 
   .header-links a:hover {
     color: #7d73fc;
+    text-decoration: underline;
   }
 
   .header-links a:not(:last-of-type) {
@@ -354,11 +356,14 @@ body {
   margin-inline: auto;
   width: 200px;
   height: 40px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
   .socials {
     margin-inline: 0;
+    margin-right: 24px;
   }
 }
 
@@ -562,6 +567,7 @@ body {
   color: #edecff;
   cursor: pointer;
   margin-bottom: 40px;
+  transition: all 0.2s ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -877,4 +883,44 @@ body {
     top: -34px;
     right: -681px;
   }
+}
+
+/* Implementing transitions and animations  */
+
+@keyframes logo-frame {
+  0% {
+    position: relative;
+    left: -238px;
+  }
+
+  100% {
+    position: relative;
+    left: 0;
+  }
+}
+
+.animate-logo {
+  animation-name: logo-frame;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+svg {
+  transition: all 0.2s ease-in-out;
+}
+
+.work-svg {
+  fill: white;
+}
+
+.svg-icon {
+  fill: #fff;
+}
+
+svg:hover {
+  fill: #7d73fc;
 }
