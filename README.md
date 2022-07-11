@@ -4,6 +4,9 @@
 
 This is the entire version of the portfolio for both mobile and desktop
 
+## Live Demo 
+[https://john-kibirige.github.io/portfolio/](https://john-kibirige.github.io/portfolio/)
+
 ## Built With
 
 -  Major languages : HTML & CSS
