@@ -21,8 +21,11 @@ This is the entire version of the portfolio for both mobile and desktop
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
+You should be having [Node.js](https://nodejs.org/en/) installed on your computer
 ### Setup
+- clone using ```git clone git@github.com:John-Kibirige/portfolio.git``` 
+- run ```npm install``` in your command line to install all the necessary dependencies
+- run ```npx stylelint "**/*.{css,scss}"``` in your command line to check for any css linter errors 
 
 ### Install
 
