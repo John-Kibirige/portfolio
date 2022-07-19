@@ -25,7 +25,7 @@ body {
   min-width: 23.4375rem;
   background: #191765;
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 48em) {
@@ -57,6 +57,7 @@ body {
 
 .menu-container {
   margin-right: 2.5rem;
+  cursor: pointer;
 }
 
 .menu-container .bar {
@@ -65,6 +66,8 @@ body {
   background: #acb7c3;
   width: 2.083125rem;
   margin-top: 0.625rem;
+  transition: all 0.2s ease-in;
+  border-radius: 20px;
 }
 
 .bar:first-of-type {
@@ -72,12 +75,33 @@ body {
 }
 
 .header-links {
+  transition: all 0.2s ease-in-out;
   display: none;
 }
 
 @media (min-width: 48em) {
   .header-links {
     display: flex;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  .nav-menu li {
+    list-style-type: none;
+  }
+
+  .nav-menu li img {
+    display: none;
+  }
+
+  .email-icon {
+    margin-left: 2rem;
+  }
+
+  .nav-menu li:not(:last-of-type) {
+    margin-right: 2rem;
   }
 
   .header-links a {
@@ -92,10 +116,6 @@ body {
   .header-links a:hover {
     color: #7d73fc;
     text-decoration: underline;
-  }
-
-  .header-links a:not(:last-of-type) {
-    margin-right: 2rem;
   }
 
   .menu-container {
@@ -195,7 +215,7 @@ body {
 
 /* forming the seperator using pseudo code  */
 .hero::after {
-  content: "";
+  content: '';
   height: 0.0625rem;
   background-color: #646369;
   display: block;
@@ -205,7 +225,7 @@ body {
 
 @media (min-width: 768px) {
   .hero p::after {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: 0.0625rem;
@@ -232,21 +252,21 @@ body {
 .stack-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "lang frame" "skills .";
+  grid-template-areas: 'lang frame' 'skills .';
   margin-left: 1.1875rem;
 }
 
 @media (min-width: 48em) {
   .stack-container {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "lang frame skills";
+    grid-template-areas: 'lang frame skills';
     width: 27.8125rem;
     margin-left: -0.75rem;
     gap: 3.75rem;
   }
 
   .stack-container::after {
-    content: "";
+    content: '';
     display: block;
     width: 430%;
     height: 0.0625rem;
@@ -290,7 +310,7 @@ body {
   font-weight: 500;
   font-size: 0.9375rem;
   line-height: 1.25rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   list-style-type: none;
   display: inline-block;
   padding: 0.78125rem 0.875rem;
@@ -343,7 +363,7 @@ body {
 
 /* separator after the stack section */
 .stack-section::after {
-  content: "";
+  content: '';
   height: 0.0625rem;
   background-color: #646369;
   display: block;
@@ -429,7 +449,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 2.5rem;
-  line-height: 6.25rem;
+  line-height: 3.25rem;
   color: #9490ff;
   text-transform: uppercase;
 }
@@ -449,11 +469,11 @@ body {
 
 /* line seperator between header and the actual projects */
 .title::after {
-  content: "";
+  content: '';
   height: 0.0625rem;
   background-color: #646369;
   display: block;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -515,7 +535,7 @@ body {
 
 .project-description {
   height: 12.75rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
@@ -525,7 +545,7 @@ body {
 
 @media (min-width: 48em) {
   .project-description {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.1875rem;
     line-height: 1.75rem;
     color: #dfe1e6;
@@ -561,7 +581,7 @@ body {
   line-height: 1.5rem;
   text-align: center;
   letter-spacing: 0.03em;
-  padding: 0.625;
+  padding: 0.625rem;
   background: #7d73fc;
   border: none;
   color: #edecff;
@@ -621,7 +641,7 @@ body {
 }
 
 .contact-description {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -670,7 +690,7 @@ body {
 
 .contact-form .user-name,
 .contact-form .user-name::placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.9375rem;
@@ -680,11 +700,12 @@ body {
   padding: 0.9375rem 0.625rem;
   border: none;
   margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 .contact-form .user-email,
 .contact-form .user-email::placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.9375rem;
@@ -694,23 +715,25 @@ body {
   border: none;
   margin-bottom: 1.5rem;
   color: #191765;
+  width: 100%;
 }
 
 .user-text-area {
   padding: 0.625rem;
   resize: vertical;
   font-size: 1rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   letter-spacing: 0.025rem;
 }
 
 .user-text-area:placeholder-shown {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.9375rem;
   line-height: 1.5rem;
   color: #81818c;
+  width: 100%;
 }
 
 .contact-form .see-projects {
@@ -746,7 +769,7 @@ body {
 
 /* end of section - footer seperator */
 .contact::after {
-  content: "";
+  content: '';
   height: 0.0625rem;
   background-color: #3a3837;
   display: block;
@@ -766,7 +789,7 @@ body {
 }
 
 .footer::after {
-  content: "";
+  content: '';
   height: 0.3125rem;
   display: block;
   background: #0d151e;
@@ -923,4 +946,84 @@ svg {
 
 svg:hover {
   fill: #7d73fc;
+}
+
+/* RELATED TO MOBILE MENU  */
+
+@media (max-width: 767.98px) {
+  .humberger.active .bar:nth-child(2) {
+    transform: translateX(200px);
+  }
+
+  .humberger.active .bar:nth-child(1) {
+    transform: translate(8px, 12px) rotate(45deg);
+    width: 18px;
+    height: 2px;
+    background: #edecff;
+  }
+
+  .humberger.active .bar:nth-child(3) {
+    transform: translate(8px, -12px) rotate(-45deg);
+    width: 18px;
+    height: 2px;
+    background: #edecff;
+  }
+
+  .header-links.active {
+    display: block;
+    background-color: #191765;
+    background-image:
+      url('../images/mobile-menu-left.svg'),
+      url('../images/mobile-menu-right.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top -1rem, right bottom;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 112px;
+    height: 100vh;
+    z-index: 1;
+    min-width: 375px;
+  }
+
+  .animate-logo.active {
+    color: #191765;
+  }
+
+  .blur-effect.active {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .nav-menu > li {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 40px 50px;
+  }
+
+  .nav-menu > li > a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #edecff;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .nav-menu > li > a:hover {
+    color: #7d73fc;
+  }
+
+  .email-icon {
+    display: none;
+  }
+
+  html.active {
+    overflow: hidden;
+  }
 }

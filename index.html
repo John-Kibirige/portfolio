@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   <meta name="John Kibirige's Portfolio" content="Personal Portfolio">
+    <meta name="John Kibirige's Portfolio" content="Personal Portfolio" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,27 +20,40 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Portfolio website</title>
   </head>
-  <body>
+  <body class="body">
     <!-- header section  -->
     <header class="header">
       <a href="#" class="logo animate-logo">John Kibirige</a>
       <nav class="header-links">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">About</a>
-        <a href="#contact">contact</a>
+        <ul class="nav-menu">
+          <li>
+            <a href="#portfolio">Portfolio</a>
+            <img id="forPortfolio" src="./images/chevron.svg" alt="chevron" />
+          </li>
+          <li>
+            <a href="#about">About</a
+            ><img id="forAbout" src="./images/chevron.svg" alt="chevron" />
+          </li>
+          <li>
+            <a href="#contact">contact</a
+            ><img id="forContact" src="./images/chevron.svg" alt="chevron" />
+          </li>
+        </ul>
+
         <a href="#"
           ><img
             src="./images/email-icon.svg"
             width="22"
             height="18"
             alt="email"
+            class="email-icon"
         /></a>
       </nav>
-      <nav class="menu-container">
+      <div class="menu-container humberger">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
-      </nav>
+      </div>
     </header>
 
     <!-- hero section  -->
@@ -476,5 +489,6 @@
       </nav>
       <p>emailhere@gmail.com</p>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
