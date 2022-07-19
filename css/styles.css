@@ -956,21 +956,26 @@ svg:hover {
   }
 
   .humberger.active .bar:nth-child(1) {
-    transform: translateY(13px) rotate(45deg);
+    transform: translate(8px, 12px) rotate(45deg);
+    width: 18px;
+    height: 2px;
+    background: #edecff;
   }
 
   .humberger.active .bar:nth-child(3) {
-    transform: translateY(-12px) rotate(-45deg);
+    transform: translate(8px, -12px) rotate(-45deg);
+    width: 18px;
+    height: 2px;
+    background: #edecff;
   }
 
   .header-links.active {
     display: block;
     background-color: #191765;
-    background-image:
-      url('../images/mobile-menu-left.svg'),
+    background-image: url('../images/mobile-menu-left.svg'),
       url('../images/mobile-menu-right.svg');
     background-repeat: no-repeat, no-repeat;
-    background-position: left top -1rem, right bottom 7rem;
+    background-position: left top -1rem, right bottom;
     position: absolute;
     right: 0;
     left: 0;
@@ -997,7 +1002,7 @@ svg:hover {
   .nav-menu > li {
     display: flex;
     justify-content: space-between;
-    margin-inline: 48px;
+    margin-inline: 40px 50px;
   }
 
   .nav-menu > li > a {
