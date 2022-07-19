@@ -955,9 +955,11 @@ svg:hover {
     z-index: 1;
     min-width: 375px;
   }
+
   .animate-logo.active {
     color: #191765;
   }
+
   .blur-effect.active {
     display: none;
   }
