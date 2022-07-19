@@ -84,6 +84,26 @@ body {
     display: flex;
   }
 
+  .nav-menu {
+    display: flex;
+  }
+
+  .nav-menu li {
+    list-style-type: none;
+  }
+
+  .nav-menu li img {
+    display: none;
+  }
+
+  .email-icon {
+    margin-left: 2rem;
+  }
+
+  .nav-menu li:not(:last-of-type) {
+    margin-right: 2rem;
+  }
+
   .header-links a {
     text-decoration: none;
     color: inherit;
@@ -96,10 +116,6 @@ body {
   .header-links a:hover {
     color: #7d73fc;
     text-decoration: underline;
-  }
-
-  .header-links a:not(:last-of-type) {
-    margin-right: 2rem;
   }
 
   .menu-container {
@@ -433,7 +449,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 2.5rem;
-  line-height: 6.25rem;
+  line-height: 3.25rem;
   color: #9490ff;
   text-transform: uppercase;
 }
@@ -457,7 +473,7 @@ body {
   height: 0.0625rem;
   background-color: #646369;
   display: block;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -684,6 +700,7 @@ body {
   padding: 0.9375rem 0.625rem;
   border: none;
   margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 .contact-form .user-email,
@@ -698,6 +715,7 @@ body {
   border: none;
   margin-bottom: 1.5rem;
   color: #191765;
+  width: 100%;
 }
 
 .user-text-area {
@@ -715,6 +733,7 @@ body {
   font-size: 0.9375rem;
   line-height: 1.5rem;
   color: #81818c;
+  width: 100%;
 }
 
 .contact-form .see-projects {
@@ -947,7 +966,8 @@ svg:hover {
   .header-links.active {
     display: block;
     background-color: #191765;
-    background-image: url('../images/mobile-menu-left.svg'), url('../images/mobile-menu-right.svg');
+    background-image: url('../images/mobile-menu-left.svg'),
+      url('../images/mobile-menu-right.svg');
     background-repeat: no-repeat, no-repeat;
     background-position: left top -1rem, right bottom 7rem;
     position: absolute;
