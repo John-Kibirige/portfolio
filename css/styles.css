@@ -1011,6 +1011,10 @@ svg:hover {
     font-size: 24px;
     line-height: 32px;
     color: #edecff;
+    transition: all 0.2s ease-in-out;
+  }
+  .nav-menu > li > a:hover {
+    color: #7d73fc;
   }
 
   .email-icon {
