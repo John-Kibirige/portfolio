@@ -947,9 +947,9 @@ svg:hover {
   .header-links.active {
     display: block;
     background-color: #191765;
-    background-image: url('../images/mobile-menu-left.svg');
-    background-repeat: no-repeat;
-    background-position: left top -1rem;
+    background-image: url('../images/mobile-menu-left.svg'), url('../images/mobile-menu-right.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top -1rem, right bottom 7rem;
     position: absolute;
     right: 0;
     left: 0;
