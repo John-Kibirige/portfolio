@@ -489,6 +489,7 @@ body {
 .project-display {
   height: 14.75rem;
   background-color: #f9f9f9;
+  width: 100%;
 }
 
 @media (min-width: 48em) {
@@ -497,19 +498,17 @@ body {
     gap: 1.5rem;
     height: 28rem;
     margin-bottom: 5rem;
+    min-width: 38.5rem;
   }
 
   .project-display {
     flex: 5 1 1.25rem;
+    width: 100%;
     height: 100%;
   }
 
   .project-text {
     flex: 2 3 13.1875rem;
-  }
-
-  .pt-special {
-    margin-top: -0.75rem;
   }
 
   .order-start {
@@ -519,6 +518,11 @@ body {
   .order-end {
     order: 2;
   }
+
+  .image-order {
+    order: 2;
+  }
+  
 }
 
 .project-title {
@@ -555,7 +559,7 @@ body {
 }
 
 .project-stack {
-  margin-block: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .project-stack .project-stack-list {
@@ -798,10 +802,6 @@ body {
   margin: 1.6875rem auto 0.5rem;
 }
 
-.footer-separator {
-  display: none;
-}
-
 @media (min-width: 48em) {
   .footer {
     display: flex;
@@ -819,6 +819,11 @@ body {
     margin-left: -8.875rem;
     background: #3a3837;
     margin-bottom: 1.375rem;
+  }
+  .footer-helper {
+    padding-top: 45px;
+    border-top: 1px solid #0d151e;
+    margin-inline: -132px;
   }
 }
 
