@@ -388,6 +388,12 @@ body {
   }
 }
 
+.popup-links img {
+  display: block;
+  margin-inline: auto;
+  cursor: pointer;
+}
+
 .socials a img {
   width: 2.375rem;
   height: 2.125rem;
@@ -824,6 +830,7 @@ body {
     background: #3a3837;
     margin-bottom: 1.375rem;
   }
+
   .footer-helper {
     padding-top: 1rem;
     border-top: 1px solid #0d151e;
@@ -981,7 +988,8 @@ svg:hover {
   .header-links.active {
     display: block;
     background-color: #191765;
-    background-image: url('../images/mobile-menu-left.svg'),
+    background-image:
+      url('../images/mobile-menu-left.svg'),
       url('../images/mobile-menu-right.svg');
     background-repeat: no-repeat, no-repeat;
     background-position: left top -1rem, right bottom;
@@ -1040,8 +1048,8 @@ svg:hover {
 
 .display-pop {
   background: #383867;
-  border: 1px solid #ffffff;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  border: 1px solid #fff;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   padding: 24px;
   display: block;
   transition: all 0.2s ease-in-out;
@@ -1058,12 +1066,12 @@ svg:hover {
 }
 
 .popup-title {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-  color: #ffffff;
+  color: #fff;
   height: 58px;
   margin-top: 12px;
 }
@@ -1091,11 +1099,6 @@ svg:hover {
   display: none;
 }
 
-.popup-links img {
-  display: block;
-  margin-inline: auto;
-  cursor: pointer;
-}
 .popup-links img:hover {
   transform: scale(1.02);
 }
@@ -1108,7 +1111,6 @@ svg:hover {
   right: 0;
   left: 0;
   bottom: 0;
-  background: #a2a3ae;
   mix-blend-mode: multiply;
 }
 
@@ -1117,12 +1119,14 @@ svg:hover {
   display: none;
 }
 
-.popup-description {
-  display: none;
-}
+@media (max-width: 768px) {
+  .popup-description {
+    display: none;
+  }
 
-.popup-description.mob {
-  display: block;
+  .popup-description.mob {
+    display: block;
+  }
 }
 
 /* add media query for the popup  */
@@ -1130,6 +1134,7 @@ svg:hover {
   .popup-description.mob {
     display: none;
   }
+
   .popup-description.desk {
     display: block;
     width: 62%;
