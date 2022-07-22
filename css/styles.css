@@ -1174,3 +1174,12 @@ svg:hover {
     margin-block: 36px;
   }
 }
+
+/* Styles for the form error message */
+.error {
+  display: block;
+  margin-top: -22px;
+  text-align: center;
+  font-size: 16px;
+  color: red;
+}
