@@ -230,14 +230,13 @@ window.addEventListener('load', () => {
 
 // --------------- FORM VALIDATION FOR ONLY EMAIL ------------------------------------
 const form = document.querySelector('.contact-form');
-const email = document.querySelector('#email').value;
-const errorMessage = document.querySelector('.');
 
-form.addEventListener('click', (event) => {
-  const condition = email.toLowerCase() === email;
-  if (condition === false) {
+form.addEventListener('submit', function formValidation (event) {
+  const email = this.querySelector('#email').value;
+  const errorMessage = this.querySelector('.error');
+  const condition =  email.length > 0 ? email.toLowerCase() === email : false;
+  if (!condition) {
     event.preventDefault();
     errorMessage.textContent = 'Email should be in lower case';
-  } else {
   }
 });
