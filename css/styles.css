@@ -668,6 +668,7 @@ body {
 .contact-form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 7.96875rem;
 }
 
 .contact-form ul li input,
@@ -772,7 +773,6 @@ body {
     margin-inline: auto;
     display: block;
     margin-top: 5.5625rem;
-    margin-bottom: 7.96875rem;
   }
 }
 
@@ -988,8 +988,7 @@ svg:hover {
   .header-links.active {
     display: block;
     background-color: #191765;
-    background-image:
-      url('../images/mobile-menu-left.svg'),
+    background-image: url('../images/mobile-menu-left.svg'),
       url('../images/mobile-menu-right.svg');
     background-repeat: no-repeat, no-repeat;
     background-position: left top -1rem, right bottom;
