@@ -988,7 +988,8 @@ svg:hover {
   .header-links.active {
     display: block;
     background-color: #191765;
-    background-image: url('../images/mobile-menu-left.svg'),
+    background-image:
+      url('../images/mobile-menu-left.svg'),
       url('../images/mobile-menu-right.svg');
     background-repeat: no-repeat, no-repeat;
     background-position: left top -1rem, right bottom;
@@ -1182,4 +1183,10 @@ svg:hover {
   text-align: center;
   font-size: 16px;
   color: red;
+}
+
+@media (max-width: 768px) {
+  .error {
+    text-align: left;
+  }
 }
