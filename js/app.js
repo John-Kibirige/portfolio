@@ -185,3 +185,45 @@ function generatePopup(project) {
     </div>
   </div>`;
 }
+
+// load the project section when the window has loaded
+window.addEventListener('load', () => {
+  const projectSectionWrapper = document.createElement('section');
+  projectSectionWrapper.innerHTML = projectSection;
+
+  // inserting the project wrapper to the right position in the overall-container div
+  const overallContainer = document.querySelector('.overall-container');
+  overallContainer.insertBefore(
+    projectSectionWrapper,
+    overallContainer.children[4]
+  );
+
+  // adding event listeners to the buttons inside the projects separately;
+  const seeProjectBtns = document.querySelectorAll('.clickable');
+  const overlay = document.querySelector('.overall-overlay');
+
+  seeProjectBtns.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      // toggle the active class on the popup and the overlay
+      overlay.classList.toggle('active');
+
+      // create the popup only when the user has clicked a button
+      // add the created popup to a created div -- display popup
+      const displayPopup = document.createElement('div');
+      displayPopup.classList.add('display-pop');
+      displayPopup.innerHTML = generatePopup(project1);
+
+      // get specific location of the button
+      const proj = document.getElementById(`project-${index + 1}`);
+      proj.style.position = 'relative';
+      proj.appendChild(displayPopup);
+
+      // add event listener to the close icon
+      const close = document.querySelector('.close-icon');
+      close.addEventListener('click', () => {
+        overlay.classList.toggle('active');
+        proj.removeChild(displayPopup);
+      });
+    });
+  });
+});
