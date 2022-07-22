@@ -112,46 +112,48 @@ const projectSection = `
     <h2 class="title">my recent work</h2>
     <div class="projects-container">
         ${projects
-    .map(
-      (project, index) => `           
+          .map(
+            (project, index) => `           
                 <div class="project" id="project-${index + 1}">
                   <div class=${
-  (index + 1) % 2 === 0 ? 'display-order' : ''
-}></div>
+                    (index + 1) % 2 === 0 ? 'display-order' : ''
+                  }></div>
                   <div class="project-text">
                     <h2 class="project-title">${project.projectText.title}</h2>
                     <p class="project-description">${
-  project.projectText.description
-}</p>
+                      project.projectText.description
+                    }</p>
 
                     <div class="project-stack">
                       <ul class="project-stack-list">
                         ${project.projectText.technology
-    .map((item) => `<li>${item}</li>`)
-    .join('')}
+                          .map((item) => `<li>${item}</li>`)
+                          .join('')}
                       </ul>
                     </div>
 
                     <button class="project-btn clickable" type="button">${
-  project.projectText.button.text
-}</button>
+                      project.projectText.button.text
+                    }</button>
                   </div>
 
                   <!-- blur effect -->
                   <div class=${project.blur.class}></div>
 
                 </div>
-              `,
-    )
-    .join('')}
+              `
+          )
+          .join('')}
     </div>
 </section>
 `;
 
 // working on the popup menu
-const mobileDescription = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it 1960s withthe releaLorem Ipsum is simply dummy text of the printing and typesettingever since the 1500s, when an unknown printer took a galley of type verislapoa todoe.';
+const mobileDescription =
+  'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it 1960s withthe releaLorem Ipsum is simply dummy text of the printing and typesettingever since the 1500s, when an unknown printer took a galley of type verislapoa todoe.';
 
-const desktopDescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.";
+const desktopDescription =
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.";
 
 /**
  * this function will be a template to generate all popups
@@ -193,7 +195,7 @@ window.addEventListener('load', () => {
   const overallContainer = document.querySelector('.overall-container');
   overallContainer.insertBefore(
     projectSectionWrapper,
-    overallContainer.children[4],
+    overallContainer.children[4]
   );
 
   // adding event listeners to the buttons inside the projects separately;
