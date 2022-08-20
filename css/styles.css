@@ -988,8 +988,7 @@ svg:hover {
   .header-links.active {
     display: block;
     background-color: #191765;
-    background-image:
-      url('../images/mobile-menu-left.svg'),
+    background-image: url('../images/mobile-menu-left.svg'),
       url('../images/mobile-menu-right.svg');
     background-repeat: no-repeat, no-repeat;
     background-position: left top -1rem, right bottom;
@@ -1184,9 +1183,18 @@ svg:hover {
   font-size: 16px;
   color: red;
 }
+.pro-image {
+  width: 100%;
+  height: 70%;
+}
 
 @media (max-width: 768px) {
   .error {
     text-align: left;
+  }
+  .pro-image {
+    width: 529px;
+    height: 61%;
+    display: block;
   }
 }
