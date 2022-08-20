@@ -96,6 +96,9 @@ function makeProject() {
 // define all the four sections inside the the  portfolio projects section and modify any difference
 const project1 = makeProject();
 project1.blur.class = 'blur-eff-one';
+project1.imageUrl = '././images/todo-list.png';
+project1.projectText.title = 'Todo List App';
+project1.projectText.description = 'This is a simple todo list app to help you plan and manage your time effectively, by writing down all the tasks that you have in a given day. it has all the basic functionalities of adding a task, deleting it and updating it';
 const project2 = makeProject();
 project2.blur.class = 'blur-eff-two';
 const project3 = makeProject();
@@ -115,9 +118,9 @@ const projectSection = `
     .map(
       (project, index) => `           
                 <div class="project" id="project-${index + 1}">
-                  <div class=${
-  (index + 1) % 2 === 0 ? 'display-order' : ''
-}></div>
+                  <div class=${(index + 1) % 2 === 0 ? 'display-order' : ''}>
+                  <img src="${project.imageUrl}" class="pro-image" />
+                  </div>
                   <div class="project-text">
                     <h2 class="project-title">${project.projectText.title}</h2>
                     <p class="project-description">${
@@ -149,7 +152,6 @@ const projectSection = `
 `;
 
 // working on the popup menu
-const mobileDescription = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it 1960s withthe releaLorem Ipsum is simply dummy text of the printing and typesettingever since the 1500s, when an unknown printer took a galley of type verislapoa todoe.';
 
 const desktopDescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.";
 
@@ -158,26 +160,28 @@ const desktopDescription = "Lorem Ipsum is simply dummy text of the printing and
  * @param {Object} project
  * @returns {string}
  */
-function generatePopup(project) {
-  const popUpObject = {
-    title: 'Multi - Post stories',
-    imageUrl: '././images/popup-img-mobile.png',
-  };
+function generatePopup(
+  title = 'Multi - Post stories',
+  imageUrl = '././images/popup-img-mobile.png',
+  liveLink = 'https://john-kibirige.github.io/portfolio/#portfolio',
+  source = 'https://github.com/John-Kibirige/portfolio',
+  description = desktopDescription,
+) {
   return `
   <div class="mobile-popup">
     <img class="close-icon" src="././images/close-popup.svg" />
-    <h3 class="popup-title">${popUpObject.title}</h3>
-    <div wrap-popup-image><img class="popup-image" src="${popUpObject.imageUrl}" /></div>
-    <p class="popup-description mob">${mobileDescription}</p>
-    <p class="popup-description desk">${desktopDescription}</p>
+    <h3 class="popup-title">${title}</h3>
+    <div wrap-popup-image><img class="popup-image" src="${imageUrl}" /></div>
+    <p class="popup-description mob">${description}</p>
+    <p class="popup-description desk">${description}</p>
 
     <img src="././images/tags-mobile.svg" class="mobile-tag" />
     <img src="././images/tags-desktop.svg" class="desktop-tag" />
     <div class="popup-links">
-      <a href="${project.liveLink}"
+      <a href="${liveLink}"
         ><img class="see-live-img" src="././images/see-live.svg"
       /></a>
-      <a href="${project.source}"
+      <a href="${source}"
         ><img class="see-source-img" src="././images/see-source.svg"
       /></a>
     </div>
@@ -209,7 +213,13 @@ window.addEventListener('load', () => {
       // add the created popup to a created div -- display popup
       const displayPopup = document.createElement('div');
       displayPopup.classList.add('display-pop');
-      displayPopup.innerHTML = generatePopup(project1);
+      displayPopup.innerHTML = generatePopup(
+        'Todo List App',
+        '././images/todo-list.png',
+        'https://john-kibirige.github.io/to-do-list/',
+        'https://github.com/John-Kibirige/to-do-list',
+        'This is a simple todo list app to help you plan and manage your time effectively, by writing down all the tasks that you have in a given day. it has all the basic functionalities of adding a task, deleting it and updating it',
+      );
 
       // get specific location of the button
       const proj = document.getElementById(`project-${index + 1}`);

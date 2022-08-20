@@ -1185,8 +1185,19 @@ svg:hover {
   color: red;
 }
 
+.pro-image {
+  width: 100%;
+  height: 70%;
+}
+
 @media (max-width: 768px) {
   .error {
     text-align: left;
+  }
+
+  .pro-image {
+    width: 529px;
+    height: 61%;
+    display: block;
   }
 }
