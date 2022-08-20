@@ -98,8 +98,7 @@ const project1 = makeProject();
 project1.blur.class = 'blur-eff-one';
 project1.imageUrl = '././images/todo-list.png';
 project1.projectText.title = 'Todo List App';
-project1.projectText.description =
-  'This is a simple todo list app to help you plan and manage your time effectively, by writing down all the tasks that you have in a given day. it has all the basic functionalities of adding a task, deleting it and updating it';
+project1.projectText.description = 'This is a simple todo list app to help you plan and manage your time effectively, by writing down all the tasks that you have in a given day. it has all the basic functionalities of adding a task, deleting it and updating it';
 const project2 = makeProject();
 project2.blur.class = 'blur-eff-two';
 const project3 = makeProject();
@@ -116,8 +115,8 @@ const projectSection = `
     <h2 class="title">my recent work</h2>
     <div class="projects-container">
         ${projects
-          .map(
-            (project, index) => `           
+    .map(
+      (project, index) => `           
                 <div class="project" id="project-${index + 1}">
                   <div class=${(index + 1) % 2 === 0 ? 'display-order' : ''}>
                   <img src="${project.imageUrl}" class="pro-image" />
@@ -125,37 +124,36 @@ const projectSection = `
                   <div class="project-text">
                     <h2 class="project-title">${project.projectText.title}</h2>
                     <p class="project-description">${
-                      project.projectText.description
-                    }</p>
+  project.projectText.description
+}</p>
 
                     <div class="project-stack">
                       <ul class="project-stack-list">
                         ${project.projectText.technology
-                          .map((item) => `<li>${item}</li>`)
-                          .join('')}
+    .map((item) => `<li>${item}</li>`)
+    .join('')}
                       </ul>
                     </div>
 
                     <button class="project-btn clickable" type="button">${
-                      project.projectText.button.text
-                    }</button>
+  project.projectText.button.text
+}</button>
                   </div>
 
                   <!-- blur effect -->
                   <div class=${project.blur.class}></div>
 
                 </div>
-              `
-          )
-          .join('')}
+              `,
+    )
+    .join('')}
     </div>
 </section>
 `;
 
 // working on the popup menu
 
-const desktopDescription =
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.";
+const desktopDescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.";
 
 /**
  * this function will be a template to generate all popups
@@ -167,7 +165,7 @@ function generatePopup(
   imageUrl = '././images/popup-img-mobile.png',
   liveLink = 'https://john-kibirige.github.io/portfolio/#portfolio',
   source = 'https://github.com/John-Kibirige/portfolio',
-  description = desktopDescription
+  description = desktopDescription,
 ) {
   return `
   <div class="mobile-popup">
@@ -199,7 +197,7 @@ window.addEventListener('load', () => {
   const overallContainer = document.querySelector('.overall-container');
   overallContainer.insertBefore(
     projectSectionWrapper,
-    overallContainer.children[4]
+    overallContainer.children[4],
   );
 
   // adding event listeners to the buttons inside the projects separately;
@@ -220,7 +218,7 @@ window.addEventListener('load', () => {
         '././images/todo-list.png',
         'https://john-kibirige.github.io/to-do-list/',
         'https://github.com/John-Kibirige/to-do-list',
-        'This is a simple todo list app to help you plan and manage your time effectively, by writing down all the tasks that you have in a given day. it has all the basic functionalities of adding a task, deleting it and updating it'
+        'This is a simple todo list app to help you plan and manage your time effectively, by writing down all the tasks that you have in a given day. it has all the basic functionalities of adding a task, deleting it and updating it',
       );
 
       // get specific location of the button
