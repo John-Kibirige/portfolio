@@ -2,7 +2,8 @@
 
 # Portfolio website
 
-This is the entire version of the portfolio for both mobile and desktop
+This is the entire version of my portfolio and it is responsive in that it is able to work well on both mobile and desktop.
+This is more like the first draft of my portfolio with intentions of improving on it even more.
 
 ## Live Demo 
 [https://john-kibirige.github.io/portfolio/](https://john-kibirige.github.io/portfolio/)
